@@ -15,7 +15,7 @@ function Stories() {
   }, []);
 
   return (
-    <div className="flex space-x-2 p-6 bg-white mt-8 border rounded-xl shadow-md overflow-scroll scrollbar-thin scrollbar-thumb-gray-300">
+    <div className="flex mx-3 space-x-2 p-6 bg-white mt-8 border rounded-xl shadow-md overflow-scroll scrollbar-thin scrollbar-thumb-gray-800">
       {suggestion.map((profile) => (
         <Story
           key={profile.id}

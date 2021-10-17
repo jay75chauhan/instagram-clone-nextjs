@@ -9,7 +9,7 @@ export default function Home() {
         <title>Instagram 2.0</title>
         <link
           rel="icon"
-          href="https://cdn-icons.flaticon.com/png/512/739/premium/739193.png?token=exp=1634474942~hmac=1a79572b40126239dd445fce9eced7c6"
+          href="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
         />
       </Head>
       <Header />
