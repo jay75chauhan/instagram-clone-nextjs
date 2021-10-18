@@ -8,8 +8,9 @@ function MiniProfile() {
       <img
         src={session?.user?.image}
         alt=""
-        className="w-16 h-16 rounded-full p-[2px] border-[3px] border-t-[#28F19C] border-b-[#02A3F8] border-r-[#15C9CB] border-l-[#15C9CB]"
+        className="w-16 h-16 rounded-full  p-[2px] border-[3px] border-t-[#28F19C] border-b-[#02A3F8] border-r-[#15C9CB] border-l-[#15C9CB]"
       />
+
       <div className="flex-1 mx-4">
         <h2 className="font-semibold">{session?.user?.username}</h2>
         <h3 className="text-sm text-gray-400">Welcome to Instagram</h3>
