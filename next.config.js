@@ -5,6 +5,7 @@ module.exports = {
       "avatars.githubusercontent.com",
       "cdn-icons.flaticon.com",
       "images.unsplash.com",
+      "cdn-icons-png.flaticon.com",
     ],
   },
 };

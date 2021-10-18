@@ -17,7 +17,7 @@ function Post({ id, userImg, username, img, caption }) {
         <img
           src={userImg}
           alt=""
-          className="rounded-full h-12 w-12 object-contain border p-1 mr-3 cursor-pointer"
+          className="rounded-full h-12 w-12 object-contain border border-t-[#28F19C] border-b-[#02A3F8] border-r-[#15C9CB] border-l-[#15C9CB] p-[1px] mr-3 cursor-pointer"
         />
         <p className="flex-1 font-semibold">{username}</p>
         <DotsHorizontalIcon className="h-5 cursor-pointer" />

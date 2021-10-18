@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Feed from "../components/Feed";
 import Header from "../components/Header";
+import Modal from "../components/Modal";
 
 export default function Home() {
   return (
@@ -9,13 +10,13 @@ export default function Home() {
         <title>Instagram 2.0</title>
         <link
           rel="icon"
-          href="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
+          href="https://cdn-icons-png.flaticon.com/512/747/747562.png"
         />
       </Head>
-      <Header />
 
+      <Header />
       <Feed />
-      {/* Modal */}
+      <Modal />
     </div>
   );
 }
