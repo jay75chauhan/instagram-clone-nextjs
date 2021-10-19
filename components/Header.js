@@ -22,7 +22,7 @@ function Header() {
   const [open, setOpen] = useRecoilState(modalState);
 
   return (
-    <div className="shadow-xl border-b  rounded-b-3xl bg-gray-50 top-0 sticky z-50 p-3 lg:p-0">
+    <div className="shadow-xl border-b  rounded-b-2xl bg-gray-50 top-0 sticky z-50 p-3 lg:p-0">
       <div className="flex justify-between items-center max-w-6xl px-1 lg:mx-auto  ">
         {/* leftL */}
         <div
@@ -77,7 +77,7 @@ function Header() {
 
               <PlusCircleIcon
                 onClick={() => setOpen(true)}
-                className="navBtn"
+                className=" h-6  cursor-pointer hover:scale-125 transition-all duration-150 ease-out"
               />
               <UserGroupIcon className="navBtn" />
               <HeartIcon className="navBtn" />

@@ -17,12 +17,12 @@ function Stories() {
   }, []);
 
   return (
-    <div className="flex mx-3 space-x-2 p-6 bg-white mt-8 border rounded-xl shadow-md overflow-scroll scrollbar-thin scrollbar-thumb-gray-800">
+    <div className="flex md:mx-2 space-x-2 p-6 bg-white md:mt-6 mt-1 border md:rounded-xl md:shadow-md overflow-scroll scrollbar-thin md:scrollbar-thumb-gray-800">
       {session && (
         <div className="relative">
           <Story img={session.user.image} usersname={session.user.username} />
           <div className="absolute bottom-4 right-0 ">
-            <p className="h-4 w-4 text-white text-sm animate-spin  font-bold shadow-xl rounded-full bg-red-500 flex items-center justify-center ">
+            <p className="h-4 w-4 text-white text-sm   font-bold shadow-xl rounded-full bg-red-500 flex items-center justify-center ">
               +
             </p>
           </div>
