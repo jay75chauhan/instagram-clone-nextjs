@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-hide">
       <Head>
-        <title>Hii -{session ? session.user.username : "instagram 2.0"}</title>
+        <title>
+          Hii -{session ? session?.user?.username : "instagram 2.0"}
+        </title>
         <link
           rel="icon"
           href="https://cdn-icons-png.flaticon.com/512/747/747562.png"

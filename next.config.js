@@ -1,11 +1,19 @@
-module.exports = {
+const withPWA = require("next-pwa");
+
+module.exports = withPWA({
+  pwa: {
+    dest: "public",
+    register: true,
+    skipWaiting: true,
+    disable: process.env.NODE_ENV === "development",
+  },
   images: {
     domains: [
       "links.papareact.com",
-      "avatars.githubusercontent.com",
+
       "cdn-icons.flaticon.com",
-      "images.unsplash.com",
+
       "cdn-icons-png.flaticon.com",
     ],
   },
-};
+});
