@@ -133,7 +133,7 @@ function Post({ id, userImg, username, img, caption }) {
       {/* commented  */}
 
       {comments.length > 0 && (
-        <div className="ml-8 h-24 overflow-y-scroll scrollbar-thumb-black scrollbar-thin">
+        <div className="ml-8  max-h-20 mb-4 mb:mb-0 overflow-y-scroll scrollbar-thumb-black scrollbar-thin">
           {comments.map((comment) => (
             <div
               key={comment.id}
@@ -141,7 +141,7 @@ function Post({ id, userImg, username, img, caption }) {
             >
               <img
                 src={comment.data().userImage}
-                className="h-7 rounded-full"
+                className="h-5 md:h-7 rounded-full"
               />
               <p className="text-sm flex-1">
                 {" "}

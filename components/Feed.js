@@ -5,7 +5,7 @@ import Stories from "./Stories";
 import Suggetions from "./Suggetions";
 import { useSession } from "next-auth/react";
 
-function Feed() {
+function Feed({ posts }) {
   const { data: session } = useSession();
   return (
     <main
@@ -15,7 +15,7 @@ function Feed() {
     >
       <section className="col-span-2">
         <Stories />
-        <Posts />
+        <Posts posts={posts} />
       </section>
       {session && (
         <section className="hidden xl:inline-grid md:col-span-1">

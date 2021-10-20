@@ -27,15 +27,15 @@ import { db } from "../firebase";
 //   },
 // ];
 
-function Posts() {
-  const [posts, setPosts] = useState([]);
+export default function Posts({ posts }) {
+  const [postsr, setPostsr] = useState([]);
 
   useEffect(
     () =>
       onSnapshot(
         query(collection(db, "posts"), orderBy("timestamp", "desc")),
         (snapshot) => {
-          setPosts(snapshot.docs);
+          setPostsr(snapshot.docs);
         }
       ),
 
@@ -44,18 +44,27 @@ function Posts() {
 
   return (
     <div className="md:mx-2">
-      {posts.map((post) => (
-        <Post
-          key={post.id}
-          id={post.id}
-          userImg={post.data().profileImg}
-          username={post.data().username}
-          img={post.data().image}
-          caption={post.data().caption}
-        />
-      ))}
+      {postsr
+        ? postsr?.map((post) => (
+            <Post
+              key={post.id}
+              id={post.id}
+              userImg={post.data().profileImg}
+              username={post.data().username}
+              img={post.data().image}
+              caption={post.data().caption}
+            />
+          ))
+        : posts.map((post) => (
+            <Post
+              key={post.id}
+              id={post.id}
+              userImg={post.data().profileImg}
+              username={post.data().username}
+              img={post.data().image}
+              caption={post.data().caption}
+            />
+          ))}
     </div>
   );
 }
-
-export default Posts;

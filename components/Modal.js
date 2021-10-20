@@ -104,7 +104,7 @@ function Modal() {
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95 "
           >
-            <div className="inline-block align-bottom bg-gray-50 rounded-2xl px-4 pt-5 pb-4 text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6 mx-auto">
+            <div className="inline-block  align-bottom bg-gray-50 w-3/4 max-w-xs rounded-2xl px-4 pt-5 pb-4 text-left overflow-hidden shadow-2xl transform transition-all sm:my-5 sm:align-middle sm:max-w-sm sm:w-full sm:p-6 mx-auto">
               <div>
                 {selectedFile ? (
                   <img
@@ -145,7 +145,7 @@ function Modal() {
                     <div className="mt-2 rounded-full">
                       <input
                         type="text"
-                        className="border-none focus:ring-0 w-full  p-3 rounded-2xl bg-gray-100 outline-none shadow"
+                        className=" text-xs md:text-base border-none focus:ring-0 w-full  p-3 rounded-2xl bg-gray-100 outline-none shadow"
                         placeholder="Please enter a caption..."
                         ref={captionRef}
                       />
